@@ -1,8 +1,10 @@
 import { UserMenuLayout } from "@/layouts/UserMenuLayout/UserMenuLayout"
-import { InfoPlate } from "../InfoPlate/InfoPlate"
-import { UserPhoto } from "../UserPhoto/UserPhoto"
-import { SearchField } from "../Search/SearchField/SearchField"
-import { SearchButton } from "../Search/SearchButton/SearchButton"
+import { InfoPlate } from "@/components/InfoPlate/InfoPlate"
+import { UserPhoto } from "@/components/UserPhoto/UserPhoto"
+import { SearchField } from "@/components/Search/SearchField/SearchField"
+import { SearchButton } from "@/components/Search/SearchButton/SearchButton"
+import { SearchedUsersPanel } from "@/components/SearchedUsersPanel/SearchedUsersPanel"
+
 
 export const MainChatWindow = () => {
     return (
@@ -13,6 +15,14 @@ export const MainChatWindow = () => {
                     <div className="flex my-3">
                         <SearchField />
                         <SearchButton />
+                    </div>
+                    <div>
+                        <SearchedUsersPanel />
+                        <SearchedUsersPanel />
+                        <SearchedUsersPanel />
+                        <SearchedUsersPanel />
+                        <SearchedUsersPanel />
+                        <SearchedUsersPanel />
                     </div>
                 </div>
                 <InfoPlate />
