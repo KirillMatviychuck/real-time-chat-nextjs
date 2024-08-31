@@ -5,7 +5,7 @@ export const UserMenuLayout: FC<UserMenuLayoutProps> = ({
     userImg
 }) => {
     return (
-        <section className={`flex flex-col items-center w-[38%] h-full border border-pink-600 ${userImg ? 'mr-5' : 'ml-5'}`}>
+        <section className={`flex flex-col items-center w-[38%] h-full ${userImg ? 'mr-5' : 'ml-5'}`}>
             {children}
         </section>
     )
