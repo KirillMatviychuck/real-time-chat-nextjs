@@ -4,7 +4,7 @@ import mockImg from '@/assets/joey.jpg'
 
 export const SearchedUsersPanel = () => {
     return (
-        <main className='flex items-center h-[60px] w-[250px] rounded-tl-full rounded-bl-full border outline-1 shadow-2xl pr-2 bg-gradient-to-r from-slate-400 to-stone-300'>
+        <main className='flex items-center h-[60px] w-[250px] my-1 rounded-tl-full rounded-bl-full border outline-1 shadow-2xl pr-2 bg-gradient-to-r from-slate-400 to-stone-300'>
 
             <Image src={mockImg} alt='searched user'
                 className='flex rounded-full border outline-2 h-[60px] w-[60px]' />
