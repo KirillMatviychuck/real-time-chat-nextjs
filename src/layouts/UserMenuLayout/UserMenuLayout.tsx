@@ -1,11 +1,17 @@
-export const UserMenuLayout = ({
+import { FC } from "react"
+
+export const UserMenuLayout: FC<UserMenuLayoutProps> = ({
     children,
-}: {
-    children: React.ReactNode
+    userImg
 }) => {
     return (
-        <section className='flex flex-col items-center grow h-full border border-pink-600'>
+        <section className={`flex flex-col items-center w-[38%] h-full border border-pink-600 ${userImg ? 'mr-5' : 'ml-5'}`}>
             {children}
         </section>
     )
+}
+
+interface UserMenuLayoutProps {
+    userImg: boolean
+    children: React.ReactNode
 }
